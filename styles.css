@@ -72,7 +72,7 @@ li{
 header {
     height: calc(100vh-80px);
     margin-top: 30px;
-    background-color: #7342d6ea;
+    background-color: #b59ee3fe;
 }
 
 .header__container{
@@ -142,8 +142,12 @@ HIGHLIGHTS
 
 */
 
+#highlights {
+    position: relative;
+}
+
 #highlights:before {
-    /* background: url('assests/wave.svg');
+    background: url("assests/wave.svg");
     content: "";
     position: absolute;
     top: 1px;
@@ -153,21 +157,21 @@ HIGHLIGHTS
     height: 12vw;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 1; */
+    z-index: 1; 
 }
 
 #highlights:after{
-    background: url('assets/wave.svg');
+    background: url("assets/wave.svg");
     content: "";
     position: absolute;
-    bottom: 1px;
+    bottom: 0;
     left: 0;
     transform: translateY(100%) rotate(180deg);
     width: 101vw;
     height: 12vw;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 1; */
+    z-index: 1; 
 }
 
 .highlight__wrapper{
