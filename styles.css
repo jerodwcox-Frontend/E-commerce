@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box; 
     font-family: 'roboto', sans-serif;
+    
 } 
 
 nav{
@@ -20,6 +21,12 @@ img{
 
 p{
     line-height: 1.5;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    background-color: #bba1eef6;
 }
 
 .nav__container{
@@ -218,3 +225,4 @@ FEATURES
 #features {
     background-color: rgba(red, green, blue, alpha);
 }
+
