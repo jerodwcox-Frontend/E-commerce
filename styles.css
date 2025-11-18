@@ -150,6 +150,8 @@ HIGHLIGHTS
 */
 
 #highlights {
+    *width;100%;
+    justify-content: center;
     position: relative;
     background-color: white; /* or transparent */
 }
