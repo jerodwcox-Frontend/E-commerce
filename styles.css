@@ -26,7 +26,6 @@ p{
 .container{
     width: 100%;
     max-width: 1200px;
-    background-color: #bba1eef6;
 }
 
 .nav__container{
@@ -120,7 +119,7 @@ button:active {
     transform: translateY(1px);
 }
 .btn{
-    background-color: #7342d6;
+    background-color: #200258;
     color: white;
     padding: 12px 24px;
     font-size: 20px;
@@ -134,12 +133,13 @@ z-index: 2;
 }
 
 .container{
+width: 100%;
 padding: 56px 0;
 }
 
 .row{
     width: 100%;
-    max-width: 1200px;
+    max-width: 20   1500px;
     margin: 0 auto;
 }
 
@@ -151,22 +151,25 @@ HIGHLIGHTS
 
 #highlights {
     position: relative;
+    background-color: white; /* or transparent */
 }
 
+.body {
+    margin: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll from 101vw */
+}
 #highlights:before {
-background: url("assets/wave.svg");
+    background: url("assets/wave.svg");
     content: "";
     position: absolute;
-    top: 1px;
+    top: 0;  
     left: 0;
     transform: translateY(-100%);
-    width: 101vw;
+    width: 100vw;  
     height: 12vw;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 1; 
 }
-
 #highlights:after{
 background: url("assets/wave.svg");
     content: "";
@@ -178,7 +181,23 @@ background: url("assets/wave.svg");
     height: 12vw;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #d0b9fd;
     z-index: 1; 
+}
+
+ /* For full-width sections */
+.highlight {
+    width: 100%;
+    background-color: none;
+    padding: 56px 0;
+}
+
+/* For centered content inside sections */
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 .highlight__wrapper{
@@ -223,6 +242,6 @@ FEATURES
 
 */
 #features {
-    background-color: rgba(red, green, blue, alpha);
+    background-color: white;
 }
 
